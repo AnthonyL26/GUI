@@ -230,6 +230,7 @@ public class CelebrityPanel extends JPanel implements ActionListener{
     }
     if (controller.getCelebrityGameSize() == 0) {
       clueArea.append("\nNo more celebrities to guess.");
+      countdownTimer.stop();
       staticTimerLabel.setText("You Win");
       dynamicTimerLabel.setText("");
       guessField.setEnabled(false);
