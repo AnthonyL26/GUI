@@ -67,6 +67,11 @@ public class CelebrityGame {
 			gameWindow.replaceScreen("GAME");
 		}
 	}
+	public void reset() {
+		celebGameList = new ArrayList<>();
+		gameCelebrity = null;
+		gameWindow.replaceScreen("START");
+	}
 
 	/**
 	 * Adds a Celebrity of specified type to the game list

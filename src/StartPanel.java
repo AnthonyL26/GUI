@@ -138,6 +138,13 @@ public class StartPanel extends JPanel implements ActionListener{
     startButton.setEnabled(false);
     typeGroup.add(celebrityRadio);
   }
+
+  public void reset() {
+    celebrityCount = 0;
+    celebrityRadio.setSelected(true);
+    startButton.setEnabled(false);
+    celebrityCountLabel.setText("Current Celebrity Count: " + celebrityCount);
+  }
   
   /**
    * Uses the Springlayout constraint system to place all GUI components on
